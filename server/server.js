@@ -37,7 +37,7 @@ app.get("/reviews", async (req, res) => {
 
 //write a CREATE endpoint
 
-app.post("/add-reviews", (req, res) => {
+app.post("/add-review", (req, res) => {
   try {
     //the body --> this is the new data I am adding to the db
     const {

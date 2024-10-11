@@ -17,9 +17,25 @@ export default function App() {
     setFormValues({ ...formValues, [event.target.name]: event.target.value });
   }
   //event handler
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     console.log(formValues);
+    try {
+      const res = await fetch(
+        "http://localhost:8080/add-review",
+        //these are part of the object being sent to my endpoint
+        {
+          method: "POST",
+          headers: { "Content-type": "application/json" },
+          body: JSON.stringify(formValues),
+        }
+      );
+      if (!res.ok) {
+        throw new Error("Network response failed!");
+      }
+    } catch (error) {
+      console.error("problem with fetch", error);
+    }
     //you will send the data to the server in here
   }
 

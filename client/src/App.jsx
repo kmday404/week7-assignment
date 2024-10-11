@@ -12,8 +12,8 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/reviews" element={} />  */}
         <Route path="/add-review" element={<Form />} />
+        {/* <Route path="/reviews" element={} />  */}
       </Routes>
     </>
   );
