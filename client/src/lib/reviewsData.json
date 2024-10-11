@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "guest_name": "Kat",
+    "check_in_date": "2024-09-17T23:00:00.000Z",
+    "check_out_date": "2024-09-18T23:00:00.000Z",
+    "travelled_from": "Norfolk",
+    "message_to_host": "This is a test",
+    "favourite_moments": "When this works",
+    "recommendations": "pinapple pizza",
+    "rating": "4-star"
+  },
+  {
+    "id": 2,
+    "guest_name": "Iona",
+    "check_in_date": "2022-12-12T00:00:00.000Z",
+    "check_out_date": "2022-12-16T00:00:00.000Z",
+    "travelled_from": "Ipswich",
+    "message_to_host": "Test data",
+    "favourite_moments": "Breakfast",
+    "recommendations": "coffee",
+    "rating": "2-star"
+  },
+  {
+    "id": 3,
+    "guest_name": "Rob",
+    "check_in_date": "2022-12-12T00:00:00.000Z",
+    "check_out_date": "2022-12-16T00:00:00.000Z",
+    "travelled_from": "Ipswich",
+    "message_to_host": "Test data",
+    "favourite_moments": "Breakfast",
+    "recommendations": "coffee",
+    "rating": "2-star"
+  },
+  {
+    "id": 4,
+    "guest_name": "Sinead",
+    "check_in_date": "2023-06-04T23:00:00.000Z",
+    "check_out_date": "2023-06-11T23:00:00.000Z",
+    "travelled_from": "London",
+    "message_to_host": "Test data",
+    "favourite_moments": "Testing",
+    "recommendations": "MORE coffee",
+    "rating": "5-star"
+  },
+  {
+    "id": 5,
+    "guest_name": "The Smiths",
+    "check_in_date": "2023-01-17T00:00:00.000Z",
+    "check_out_date": "2023-01-20T00:00:00.000Z",
+    "travelled_from": "Earth",
+    "message_to_host": "Test data",
+    "favourite_moments": "Testing",
+    "recommendations": "test test test test test test test",
+    "rating": "5-star"
+  },
+  {
+    "id": 6,
+    "guest_name": "Kat 2",
+    "check_in_date": "2024-10-09T23:00:00.000Z",
+    "check_out_date": null,
+    "travelled_from": "Norwich",
+    "message_to_host": "Hello Host, thank you for a lovely stay",
+    "favourite_moments": "Hopefully when this works, testing via thunderclient",
+    "recommendations": null,
+    "rating": "1-star"
+  }
+]

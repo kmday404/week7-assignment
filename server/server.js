@@ -41,27 +41,27 @@ app.post("/add-review", (req, res) => {
   try {
     //the body --> this is the new data I am adding to the db
     const {
-      guest_name,
-      check_in_date,
-      check_out_date,
-      travelled_from,
-      message_to_host,
-      favourite_moments,
+      guestName,
+      checkIn,
+      checkOut,
+      travelledFrom,
+      messageToHost,
+      favMoment,
       recommendations,
       rating,
     } = req.body;
 
     const newReview = db.query(
-      `INSERT INTO biscuits (guest_name, check_in_date, check_out_date, travelled_from, message_to_host, favourite_moments, recommendations, rating)
+      `INSERT INTO reviews (guest_name, check_in_date, check_out_date, travelled_from, message_to_host, favourite_moments, recommendations, rating)
         VALUES ($1, $2, $3, $4, $5, $6, $7, $8);
         `,
       [
-        guest_name,
-        check_in_date,
-        check_out_date,
-        travelled_from,
-        message_to_host,
-        favourite_moments,
+        guestName,
+        checkIn,
+        checkOut,
+        travelledFrom,
+        messageToHost,
+        favMoment,
         recommendations,
         rating,
       ]
