@@ -28,3 +28,5 @@ My stretch goals:
 - The Dates to not publish the time stamp
 
 Styling query: p tags I made white on reviews page (Form), but in add-reviews page (FormPage) I wanted my rating (also a p tag) to be a different color. The ratings have thier own class name, I moved the import FormPage above the Form on App.jsx - unsure why they are still white.
+
+![wireframe](./screenshots/wireframe.png)
