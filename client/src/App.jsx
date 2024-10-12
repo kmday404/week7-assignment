@@ -15,7 +15,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/add-review" element={<Form />} />
-        <Route
+        <Route path="/reviews" element={<FormPage />} />
+
+        {/* <Route
           path="/reviews"
           element={reviewsData.map((review) => (
             <div key={review.id}>
@@ -31,7 +33,7 @@ export default function App() {
               />
             </div>
           ))}
-        />
+        /> */}
       </Routes>
     </>
   );
