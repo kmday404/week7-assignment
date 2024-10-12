@@ -7,7 +7,10 @@ export default function FormPage(props) {
   useEffect(() => {
     const renderReviews = async () => {
       try {
-        const response = await fetch("http://localhost:8080/reviews");
+        // const response = await fetch("http://localhost:8080/reviews");
+        const response = await fetch(
+          "https://week7-assignment-fos5.onrender.com/reviews"
+        );
         const data = await response.json();
         setReviews(data);
       } catch (error) {

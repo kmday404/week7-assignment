@@ -24,5 +24,7 @@ My stretch goals:
 - Add images and mort text to the homepage
 - Add image(s) to the header
 - Enable the user to filter the reviews newest to oldest (likely by check out date age)
+- I'd ike the user to have an alert or feedback to show they have submitted their form
+- The Dates to not publish the time stamp
 
 Styling query: p tags I made white on reviews page (Form), but in add-reviews page (FormPage) I wanted my rating (also a p tag) to be a different color. The ratings have thier own class name, I moved the import FormPage above the Form on App.jsx - unsure why they are still white.
