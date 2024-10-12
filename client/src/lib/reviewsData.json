@@ -58,11 +58,11 @@
     "id": 6,
     "guest_name": "Kat 2",
     "check_in_date": "2024-10-09T23:00:00.000Z",
-    "check_out_date": null,
+    "check_out_date": "2024-10-10T23:00:00.000Z",
     "travelled_from": "Norwich",
     "message_to_host": "Hello Host, thank you for a lovely stay",
     "favourite_moments": "Hopefully when this works, testing via thunderclient",
-    "recommendations": null,
+    "recommendations": "go karting",
     "rating": "1-star"
   }
 ]
