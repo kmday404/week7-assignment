@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./FormPage.css";
 
 export default function FormPage(props) {
   const [reviews, setReviews] = useState([]);
@@ -20,27 +21,38 @@ export default function FormPage(props) {
   return (
     <div id="review-container">
       {reviews.map((review) => (
-        <div key={review.id}>
-          <h3>{review.guest_name}</h3>
-          <p>Check-in: {review.check_in_date}</p>
-          <p>Check-out: {review.check_out_date}</p>
-          <p>From: {review.travelled_from}</p>
-          <p>Message to host: {review.message_to_host}</p>
-          <p>Favourite moments: {review.favourite_moments}</p>
-          <p>Recommendations: {review.recommendations}</p>
-          <p>Rating: {review.rating}</p>
+        <div key={review.id} className="review-card">
+          <div className="header-info">
+            <div className="guest-details">
+              <h3>{review.guest_name}</h3>
+              <p>
+                <span>Check-in: {review.check_in_date}</span>
+                <span>Check-out: {review.check_out_date}</span>
+              </p>
+              <p>From: {review.travelled_from}</p>
+            </div>
+          </div>
+
+          <div className="review-body">
+            <div className="section message-to-host">
+              <h4>Message to the Host</h4>
+              <p>{review.message_to_host}</p>
+            </div>
+            <div className="section favourite-moments">
+              <h4>Favourite Moments</h4>
+              <p>{review.favourite_moments}</p>
+            </div>
+            <div className="section recommendations">
+              <h4>Places I/We Recommend</h4>
+              <p>{review.recommendations}</p>
+            </div>
+          </div>
+
+          <div className="rating">
+            <p>Rating: {review.rating}</p>
+          </div>
         </div>
       ))}
-
-      {/* <p>{props.id}</p>
-      <h3>{props.guest_name}</h3>
-      <p>{props.check_in_date}</p>
-      <p>{props.check_out_date}</p>
-      <p>{props.travelled_from}</p>
-      <p>{props.message_to_host}</p>
-      <p>{props.favourite_moments}</p>
-      <p>{props.recommendations}</p>
-      <p>{props.rating}</p> */}
     </div>
   );
 }
