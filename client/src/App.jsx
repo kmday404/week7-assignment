@@ -1,9 +1,10 @@
 import "./App.css";
+import FormPage from "./pages/FormPage";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
-import FormPage from "./pages/FormPage";
-import reviewsData from "./lib/reviewsData.json";
+
+// import reviewsData from "./lib/reviewsData.json";
 
 import { Routes, Route } from "react-router-dom";
 

@@ -1,21 +1,95 @@
 /* * {
   background-color: peru;
 } */
+body {
+  background-color: #364c59;
+  color: #0d0d0d;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #9ca6a6;
+}
+
+h2 {
+  color: #a66844;
+}
 
 #review-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-direction: row; */
   gap: 20px;
-  width: 100%;
-  max-width: 600px;
+  /* width: 100%; */
+  /* max-width: 600px; */
   margin: 0 auto;
   padding: 20px;
 }
 
 .review-card {
-  border: 1px solid #ccc;
+  flex: 1 1 30%;
+  max-width: 350px;
+  min-width: 280px;
+  border: 1px solid #734e39;
   border-radius: 10px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #9ca6a6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #0d0d0d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.review-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.guest-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #734e39;
+  /* text-align: center; */
+}
+
+.guest-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #0d0d0d;
+  /* text-align: center; */
+}
+
+.guest-details span {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.review-body {
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #734e39;
+}
+
+.section p {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  color: #0d0d0d;
+}
+
+.rating {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a66844;
 }

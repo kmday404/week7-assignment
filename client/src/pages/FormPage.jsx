@@ -19,40 +19,46 @@ export default function FormPage(props) {
   }, []);
 
   return (
-    <div id="review-container">
-      {reviews.map((review) => (
-        <div key={review.id} className="review-card">
-          <div className="header-info">
-            <div className="guest-details">
-              <h3>{review.guest_name}</h3>
-              <p>
-                <span>Check-in: {review.check_in_date}</span>
-                <span>Check-out: {review.check_out_date}</span>
-              </p>
-              <p>From: {review.travelled_from}</p>
-            </div>
-          </div>
+    <>
+      <h1>Reviews</h1>
 
-          <div className="review-body">
-            <div className="section message-to-host">
-              <h4>Message to the Host</h4>
-              <p>{review.message_to_host}</p>
-            </div>
-            <div className="section favourite-moments">
-              <h4>Favourite Moments</h4>
-              <p>{review.favourite_moments}</p>
-            </div>
-            <div className="section recommendations">
-              <h4>Places I/We Recommend</h4>
-              <p>{review.recommendations}</p>
-            </div>
-          </div>
+      <h2>Here you can view what others think of us</h2>
 
-          <div className="rating">
-            <p>Rating: {review.rating}</p>
+      <div id="review-container">
+        {reviews.map((review) => (
+          <div key={review.id} className="review-card">
+            <div className="review-header">
+              <div className="guest-details">
+                <h3>{review.guest_name}</h3>
+                <p>
+                  <span>Check-in: {review.check_in_date}</span>
+                  <span>Check-out: {review.check_out_date}</span>
+                </p>
+                <p>From: {review.travelled_from}</p>
+              </div>
+            </div>
+
+            <div className="review-body">
+              <div className="section">
+                <h4>Message to the Host</h4>
+                <p>{review.message_to_host}</p>
+              </div>
+              <div className="section">
+                <h4>Favourite Moments</h4>
+                <p>{review.favourite_moments}</p>
+              </div>
+              <div className="section">
+                <h4>Places I/We Recommend</h4>
+                <p>{review.recommendations}</p>
+              </div>
+            </div>
+
+            <div className="rating">
+              <p>Rating: {review.rating}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
