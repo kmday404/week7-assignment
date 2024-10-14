@@ -9,7 +9,7 @@ export default function FormPage(props) {
       try {
         // const response = await fetch("http://localhost:8080/reviews");
         const response = await fetch(
-          "https://week7-assignment-fos5.onrender.com/reviews"
+          "https://week7-assignment-server-3y7i.onrender.com/reviews"
         );
         const data = await response.json();
         setReviews(data);

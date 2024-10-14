@@ -23,7 +23,7 @@ export default function App() {
     console.log(formValues);
     try {
       const res = await fetch(
-        "http://localhost:8080/add-review",
+        "https://week7-assignment-fos5.onrender.com/add-review",
         //these are part of the object being sent to my endpoint
         {
           method: "POST",
